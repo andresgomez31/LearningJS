@@ -2,7 +2,7 @@
 
 function multiplicarArreglo(arr){
     result = 1;
-    for(n in arr){
+    for(n of arr){
         result *= n;
     }
     return result;
