@@ -1,17 +1,19 @@
 //Palindromo
 
 function esPalindromo(s){
-    index = length(s)
+    index = s.length - 1;
     i = 0;
-    reversed[index];
+
 
     for(letter of s){
-        if(index > i){
-            reversed[index--] = s[i++];
-            if(reversed[index] != s[i]){
-                return false;
-            }
+        if(s[i] !== s[index]){
+            return false;
         }
-    return true;
+        i++;
+        index--;
     }
+    return true;
 }
+
+console.log(esPalindromo("hola"));
+console.log(esPalindromo("radar"));
