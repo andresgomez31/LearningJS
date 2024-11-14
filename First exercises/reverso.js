@@ -1,13 +1,15 @@
 //Reverso de una cadena
 
 function reverso(s){
-    index = length(s)
-    i = 0;
-    reversed[index];
+    let index = s.length - 1;
+    let i = 0;
+    let reversed = [];
 
     for(letter of s){
-        reversed[index--] = s[i++];
+        reversed.push(s[index]);
+        index--;
     }
+    return reversed;
 }
 
 console.log(reverso("hola"));
